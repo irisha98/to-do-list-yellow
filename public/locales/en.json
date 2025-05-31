@@ -1,0 +1,36 @@
+{
+  "home": {
+    "title": "SelfCare Space",
+    "subtitle": "Your cozy space for self-care"
+  },
+  "nav": {
+    "home": "Home",
+    "mood": "Mood",
+    "inspiration": "Inspiration",
+    "planner": "Planner",
+    "recipes": "Recipes"
+  },
+    "mood": {
+    "title": "SelfCare Collections",
+    "teen": "Coming-of-age Films",
+    "dark": "Dark Romance",
+    "calm": "Atmospheric & Quiet Films",
+    "comedy": "Cult Comedies",
+    "horror": "90s Horror",
+    "cartoons": "Cozy Cartoons"
+  },
+
+  "inspiration": {
+    "title": "Musical Inspiration"
+  },
+  "planner": {
+    "title": "SelfCare Planner",
+    "add": "Add task",
+    "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  "recipes": {
+    "title": "Recipe Search",
+    "placeholder": "Enter ingredient or dish...",
+    "btn": "Search"
+  }
+}
