@@ -6,6 +6,10 @@
   color: #2f2f2f;
   overflow: hidden;
   font-family: 'Outfit', sans-serif;
+   background-image: linear-gradient(to bottom right, rgba(50, 50, 60, 0.4), rgba(20, 20, 30, 0.4)), url('./assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .mood-page h1{

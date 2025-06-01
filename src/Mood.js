@@ -5,7 +5,6 @@ import { useState } from 'react';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick';
-import bg from './bg.jpg'
 import { useTranslation } from 'react-i18next';
 
 function Mood () {
@@ -18,12 +17,7 @@ function Mood () {
 
     return (
     <div className='mood-page'
-    style={{
-        backgroundImage: `linear-gradient(to bottom right, rgba(50,50,60,0.4), rgba(20,20,30,0.4)), url(${bg})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-    }}>
+    >
         <h1>{t('mood.title')}</h1>
         <Buttons categories={categories} onClick={setSelectedCategory} />
         {selectedData && (
