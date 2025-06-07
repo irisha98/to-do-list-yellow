@@ -4,16 +4,13 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import './Inspiration.css';
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-
 
 function Inspiration () {
     const [currentTrack, setCurrentTrack] = useState();
-    const { t } = useTranslation();
 
     return <div className='inspiration-page'
     >
-        <h1 className='inspiration-title'>{t('inspiration.title')}</h1>
+        <h1 className='inspiration-title'>Musical Inspiration</h1>
         <div className='slider-wrapper'>
         <Slider
             dots={true}

@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Recipes.css';
 import MyRecipeComponent from './MyRecipesComponent';
-import { useTranslation } from 'react-i18next';
-
 
 function Recipes() {
-  const { t } = useTranslation();
   const [search, setSearch] = useState('');
   const [myRecipes, setMyRecipes] = useState([]);
   const [wordSubmitted, setWordSubmitted] = useState('avocado');
@@ -45,7 +42,7 @@ function Recipes() {
 
   return (
     <div className="recipes-page">
-      <h1 className="recipes-title">{t('recipes.title')}</h1>
+      <h1 className="recipes-title">Recipe Search</h1>
 
       <form
          className="search-bar"
@@ -53,13 +50,13 @@ function Recipes() {
       >
       <input
          type="text"
-         placeholder={t('recipes.placeholder')}
+         placeholder='Enter ingredient or dish...'
          value={search}
          onChange={myRecipesSearch}
          className="search-input"
       />
       
-      <button className="search-btn">{t('recipes.btn')}</button>
+      <button className="search-btn">Search</button>
      </form>
      {warning && <p className="warning-text">{warning}</p>}
 

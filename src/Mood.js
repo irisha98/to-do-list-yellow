@@ -5,12 +5,9 @@ import { useState } from 'react';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick';
-import { useTranslation } from 'react-i18next';
 
 function Mood () {
 
-   const { t } = useTranslation();
-   
    const [selectedCategory, setSelectedCategory] = useState();
    const categories = data.map((item) => item.category);
    const selectedData = data.find((item) => item.category ===selectedCategory );
@@ -18,7 +15,7 @@ function Mood () {
     return (
     <div className='mood-page'
     >
-        <h1>{t('mood.title')}</h1>
+        <h1>SelfCare Collections</h1>
         <Buttons categories={categories} onClick={setSelectedCategory} />
         {selectedData && (
             <div className='slider-wrapper'>

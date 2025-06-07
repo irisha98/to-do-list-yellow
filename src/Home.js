@@ -3,8 +3,6 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick';
 
-import { useTranslation } from 'react-i18next';
-
 const slides = [
         {src:process.env.PUBLIC_URL + '/images/mood.jpg', alt:'picture'},
         {src:process.env.PUBLIC_URL +'/images/inspiration.jpg', alt:'picture'},
@@ -12,7 +10,6 @@ const slides = [
         {src:process.env.PUBLIC_URL +'/images/recipes.jpg', alt:'picture'}
     ]
 function Home () {
-    const { t } = useTranslation();
 
     const settings = {
     dots: true,
@@ -30,8 +27,8 @@ function Home () {
     ]
   };
     return <div className='home'>
-        <h1>{t('home.title')}</h1>
-        <p>{t('home.subtitle')}</p>
+        <h1>SelfCare Space</h1>
+        <p>Your cozy space for self-care</p>
          <div className="slider-wrapper">
         <Slider {...settings}>
           {slides.map((slide, index) => (

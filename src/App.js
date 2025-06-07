@@ -8,7 +8,6 @@ import Inspiration from './Inspiration';
 import Planner from './Planner';
 import Recipes from './Recipes';
 
-import './i18n';
 import Navbar from './Navbar';
 
 function App() {

@@ -1,12 +1,11 @@
 import React from 'react';
 import './planner.css';
 import { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 
 function Planner () {
-    const { t } = useTranslation();
 
-    const daysOfWeek = t('planner.days', { returnObjects: true });
+    // const daysOfWeek = t('planner.days', { returnObjects: true });
+     const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     
     const [tasks, setTasks] = useState(() => {
         const saved = localStorage.getItem('planner-tasks');
@@ -45,7 +44,7 @@ function Planner () {
     }, [tasks]);
 
     return  <div className='planner-container'>
-        <h1 className='planner-title'>{t('planner.title')}</h1>
+        <h1 className='planner-title'>SelfCare Planner</h1>
         <div className='week-grid'>
             {daysOfWeek.map((day, dayIndex) => (
             <div className='day-column' key={dayIndex}>
@@ -53,7 +52,7 @@ function Planner () {
                 <div className='task-form'>
                     <input
                     type="text"
-                    placeholder={t('planner.add')}
+                    placeholder="Add a task..."
                     className='task-input'
                     value={inputs[dayIndex]}   
                     onChange={(e) => {
