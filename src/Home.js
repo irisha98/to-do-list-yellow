@@ -10,7 +10,6 @@ const slides = [
         {src:process.env.PUBLIC_URL +'/images/recipes.jpg', alt:'picture'}
     ]
 function Home () {
-
     const settings = {
     dots: true,
     infinite: true,

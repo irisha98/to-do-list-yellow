@@ -8,8 +8,7 @@ import { useState } from 'react';
 function Inspiration () {
     const [currentTrack, setCurrentTrack] = useState();
 
-    return <div className='inspiration-page'
-    >
+    return <div className='inspiration-page'>
         <h1 className='inspiration-title'>Musical Inspiration</h1>
         <div className='slider-wrapper'>
         <Slider

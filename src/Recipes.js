@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Recipes.css';
 import MyRecipeComponent from './MyRecipesComponent';
 
@@ -29,7 +29,6 @@ function Recipes() {
 
   setWordSubmitted(trimmed);
 };
-
 
   useEffect(() => {
     const getRecipe = async() => {

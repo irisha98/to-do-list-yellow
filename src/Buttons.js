@@ -3,10 +3,8 @@ function Buttons({categories, onClick}){
         {categories.map((cat, index) => (
             <button key={index} onClick={() => onClick(cat)}>
                 {cat}
-
             </button>
         ))}
-
     </div>
 }
 export default Buttons;

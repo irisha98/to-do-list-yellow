@@ -1,11 +1,9 @@
-import React from 'react';
+
 import './planner.css';
 import { useState, useEffect } from 'react';
 
 function Planner () {
-
-    // const daysOfWeek = t('planner.days', { returnObjects: true });
-     const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     
     const [tasks, setTasks] = useState(() => {
         const saved = localStorage.getItem('planner-tasks');

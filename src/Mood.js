@@ -7,14 +7,12 @@ import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick';
 
 function Mood () {
-
    const [selectedCategory, setSelectedCategory] = useState();
    const categories = data.map((item) => item.category);
-   const selectedData = data.find((item) => item.category ===selectedCategory );
+   const selectedData = data.find((item) => item.category === selectedCategory );
 
     return (
-    <div className='mood-page'
-    >
+    <div className='mood-page'>
         <h1>SelfCare Collections</h1>
         <Buttons categories={categories} onClick={setSelectedCategory} />
         {selectedData && (
@@ -46,7 +44,6 @@ function Mood () {
                         <p>{item.title}</p>
                     </div>
                 ))}
-
 </Slider>
 </div>
         )}
