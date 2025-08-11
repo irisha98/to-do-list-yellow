@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+SelfCare Project — это веб-приложение для организации повседневной жизни, планирования задач, поиска полезных рецептов и вдохновения через музыку и атмосферный дизайн.
+Проект создан на React с использованием Redux Toolkit, а также интеграций со сторонними API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Основные возможности:
 
-## Available Scripts
+1)Планер по дням и неделям:
+Планирование задач с разделением по дням недели
+Данные сохраняются в Local Storage, что позволяет не терять их при перезагрузке страницы
+Использованы React-хуки useState и useEffect
 
-In the project directory, you can run:
+2)Поиск рецептов:
+Интеграция с Edamam API
+Поиск по ключевым словам с отображением фото, описания и информации о составе
 
-### `npm start`
+3)Слайдер с контентом:
+Реализован с помощью библиотеки React Slick
+Карусели для отображения альбомов, изображений и подборок
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4)Фильтрация данных:
+Динамическая отрисовка элементов с помощью методов .map() и .find()
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5)Музыкальный раздел:
+Встраивание контента с YouTube
+Возможность прослушивания музыки прямо в приложении
 
-### `npm test`
+Технологии:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React 18 — создание пользовательского интерфейса
 
-### `npm run build`
+Redux Toolkit — управление состоянием приложения
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React Router DOM — маршрутизация
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React Slick + Slick Carousel — слайдеры и карусели
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Деплой:
+Проект задеплоен на Netlify.
+https://selfcareproj.netlify.app/
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+SelfCare Project is a web application designed to help you organize your daily life, plan tasks, discover healthy recipes, and find inspiration through music and an atmospheric design.
+Built with React and Redux Toolkit, the project integrates external APIs for dynamic content.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Features:
 
-## Learn More
+1)Weekly & Daily Planner:
+Plan tasks by day and week
+Data is saved in Local Storage to persist between sessions
+Implemented using React hooks useState and useEffect
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2)Recipe Search:
+Integrated with the Edamam API
+Search by keywords, displaying images, descriptions, and ingredient information
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3)Content Slider:
+Built with React Slick for carousel-style content
+Displays albums, images, and curated selections
 
-### Code Splitting
+4)Data Filtering:
+Dynamic rendering with JavaScript methods .map() and .find()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5)Music Section:
+Embedded YouTube content
+Listen to music directly in the app
 
-### Analyzing the Bundle Size
+Tech Stack:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+React 18 — UI development
 
-### Making a Progressive Web App
+Redux Toolkit — state management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+React Router DOM — routing
 
-### Advanced Configuration
+React Slick + Slick Carousel — sliders and carousels
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Local Storage API — saving data locally
 
-### Deployment
+External API integration — Edamam API for recipes, YouTube embeds for music
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Live Demo:
+The project is deployed on Netlify:https://selfcareproj.netlify.app/
