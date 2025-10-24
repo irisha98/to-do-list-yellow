@@ -42,7 +42,7 @@ function Planner () {
     }, [tasks]);
 
     return  <div className='planner-container'>
-        <h1 className='planner-title'>SelfCare Planner</h1>
+        <h1 className='planner-title'>SelfCare To-Do-List</h1>
         <div className='week-grid'>
             {daysOfWeek.map((day, dayIndex) => (
             <div className='day-column' key={dayIndex}>
