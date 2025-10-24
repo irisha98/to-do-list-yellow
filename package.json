@@ -17,7 +17,7 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://irisha98.github.io/SelfCare-Project",
+  
   "scripts": {
     "predeploy":"npm run build",
     "deploy": "gh-pages -d build",
